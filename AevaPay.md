@@ -115,15 +115,16 @@ Design our infrastructure that host the application:
  -  I will choose EKS service in Amazon.
         - you will find the design in the the same git repo.
         - It is EKS design.
-  ### used service
+  ### Used Service
   Here is the list of used service: 
  - EKS service: Managed kubernetes Cluster. 
  - RDS: for MYSQL database. 
- - All basic networking in AWS.  4- Elastic cashe : for Redis memory database. 
+ - All basic networking in AWS. 
+ - Elastic cashe : for Redis memory database. 
  - Prometheus and Grafana for monitor our application. 
  - Inside the cluster we will use 
- - Nginx Ingress Controller.
- - Deployments.
- - Service ClusterIP.
- - PODs.
- - We can use ArgoCD for continuous deployment.
+   - Nginx Ingress Controller.
+   - Deployments.
+   - Service ClusterIP.
+   - PODs.
+   - We can use ArgoCD for continuous deployment.
