@@ -17,7 +17,7 @@
     WORKDIR  /app
     COPY  package.json  ./
     COPY  --from=appbuild  /app/dist  ./dist
-    EXPOSE  4002
+    EXPOSE  4200
     CMD  npm  start
 
 
@@ -34,7 +34,7 @@ backend:
    context: .
        dockerfile: ./Dockerfile
    ports:
-       - 3000:3000
+       - 4200:4200
    volumes:
        - ./:/app
        - /app/node_modules
