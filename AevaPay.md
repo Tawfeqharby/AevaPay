@@ -26,13 +26,11 @@ each file contain the variables in each environment.
 3- Create the  docker composer file  with following:
 
 ```
-version: '3.4'
+version: '3'
 services:
 backend:
    image: backend
-   build:
-   context: 
-       dockerfile: ./Dockerfile
+   build: .
    ports:
        - 4200:4200
    volumes:
