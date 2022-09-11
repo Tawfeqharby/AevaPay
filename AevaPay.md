@@ -1,6 +1,6 @@
 # AevaPay
 ## First Phase
-1- First to create your docker files will hte following:
+1- First to create your docker files will be following:
 
     # Builing the base image 
     FROM  node:16.15.2-alpine  AS  appbuild
@@ -114,15 +114,16 @@ Design our infrastructure that host the application:
 
  -  I will choose EKS service in Amazon.
         - you will find the design in the the same git repo.
-        - It is EKS design.  Here is the list of used service: 
- 
- 
- - EKS service: Managed kubernetes Cluster.  2- RDS: for MYSQL database. 
- -   All basic networking in AWS.  4- Elastic cashe : for Redis memory database. 
+        - It is EKS design.
+        - 
+  Here is the list of used service: 
+ - EKS service: Managed kubernetes Cluster. 
+ - RDS: for MYSQL database. 
+ - All basic networking in AWS.  4- Elastic cashe : for Redis memory database. 
  - Prometheus and Grafana for monitor our application. 
- -  Inside the cluster we will use 
- -  Nginx Ingress Controller.
- -  Deployments.
- -  Service ClusterIP.
- -  PODs.
- -  We can use ArgoCD for continuous deployment.
+ - Inside the cluster we will use 
+ - Nginx Ingress Controller.
+ - Deployments.
+ - Service ClusterIP.
+ - PODs.
+ - We can use ArgoCD for continuous deployment.
