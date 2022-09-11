@@ -31,7 +31,7 @@ services:
 backend:
    image: backend
    build:
-   context: .
+   context: 
        dockerfile: ./Dockerfile
    ports:
        - 4200:4200
